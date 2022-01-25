@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // importing router
-const userRoutes = require('./routes/user');
+//const userRoutes = require('./routes/user');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -26,8 +26,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //registering user
-app.use('/api/stuff', stuffRoutes);
-app.use('/api/auth', userRoutes);
+// app.use('/api/stuff', stuffRoutes);
+// app.use('/api/auth', userRoutes);
 
 
 // catch 404 and forward to error handler
